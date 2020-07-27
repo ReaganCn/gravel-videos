@@ -1,0 +1,5 @@
+const LOADING = "LOADING";
+const CLOSE = "CLOSE";
+const VIDEO_WATCHED = "VIDEO_WATCHED"
+
+export { CLOSE, VIDEO_WATCHED };
