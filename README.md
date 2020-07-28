@@ -7,6 +7,7 @@ A simple front end for a Tutorial Videos site.
 
 Live App: [Netlify](https://gravel-videos.netlify.app/)
 
+
 ## Languages
 - Javacript
 - HTML 
@@ -24,6 +25,8 @@ Live App: [Netlify](https://gravel-videos.netlify.app/)
 - Bootstrap
 > Gridding
 
+
+
 ## Third Party Libraries
 
 ### Backend 
@@ -35,6 +38,8 @@ Live App: [Netlify](https://gravel-videos.netlify.app/)
 ### Frontend
 - netlify
 > deploy the app
+
+
 
 ## Utilities
 - Babel 
