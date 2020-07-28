@@ -1,3 +1,5 @@
+
+<p align="center">
 # Gravel Videos Project
 
 A simple front end for a Tutorial Videos site.
@@ -39,3 +41,4 @@ Live App: [Netlify](https://gravel-videos.netlify.app/)
 - Webpack
 > Bundle the code and generate static files
 
+</p>
