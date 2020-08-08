@@ -70,7 +70,9 @@ const CategoriesNavContainer = (props) => {
     );
   });
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark categories-navigation navbar-expand">
+    <Fragment>
+      <h1 class="section-header" style={props.state.isFetching ? { visibility: "hidden"} : {visibility: "visible"} }>Categories</h1>
+      <nav className="navbar navbar-expand-lg navbar-dark categories-navigation navbar-expand">
       <button
         className="navbar-toggler"
         type="button"
@@ -89,6 +91,8 @@ const CategoriesNavContainer = (props) => {
         </div>
       </div>
     </nav>
+    </Fragment>
+
   );
 };
 

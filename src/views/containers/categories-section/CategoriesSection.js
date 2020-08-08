@@ -7,6 +7,7 @@ import { CategoriesContainerConnected } from "./CategoriesContainer";
 const CategoriesSection = () => {
   return (
     <Fragment>
+      
       <CategoriesNavConnected />
       <CategoriesContainerConnected />
     </Fragment>

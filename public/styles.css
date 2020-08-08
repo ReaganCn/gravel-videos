@@ -558,8 +558,10 @@ form:hover .fa {
 /* Categories section */
 
 .section-header {
+  position: absolute;
   color: #fff;
   margin-left: 340px;
+  margin-top: -40px;
 }
 
 .categories-navigation {
