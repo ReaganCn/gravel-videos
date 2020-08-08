@@ -587,11 +587,19 @@ form:hover .fa {
 
 
 /*      LOADER         */
-
+#loader-wrapper {
+  position: fixed;      /* SET TO FIXED */
+  top: 0;
+  left: 0;
+  width: 100vw;         /* USE VIEWPORT UNITS */ 
+  height: 100vh;        /* USE VIEWPORT UNITS */
+  z-index: 1001;        /* MOVE Z-INDEX HERE! */
+  color: white;
+}
 #loader {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 63%;
+  top: 40%;
   width: 8vmax;
   height: 8vmax;
   margin: -4vmax;       /* ADD THIS (half the W/H) */
@@ -727,6 +735,11 @@ form:hover .fa {
   }
   .top-right-items {
     margin-left: -100px;
+  }
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
   }
   .video-card {
     overflow: hidden;
