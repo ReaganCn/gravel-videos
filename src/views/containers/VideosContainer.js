@@ -111,7 +111,7 @@ const VideosContainer = (props) => {
         <WatchLaterConnected />
       </div>
       <div className="col-9 videos">
-      <div id="loader-wrapper" style={props.state.isFetching ? { visibility: "visible"} : {visibility: "hidden"} }>Loading...<div id="loader"></div></div>
+      <div id="loader-wrapper" style={props.state.isFetching ? { visibility: "visible"} : {visibility: "hidden"} }><div id="loader"></div></div>
         <div className="row card-deck" style={props.state.isFetching ? { visibility: "collapse"} : {visibility: "visible"} }>{videoList}</div>
       </div>
     </Fragment>
