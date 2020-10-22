@@ -309,6 +309,19 @@ animation: pulse 1s ease-out infinite;
   margin-bottom: 20px;
 }
 
+.tagline-text-medium {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.tagline-text-medium-sm {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: none;
+}
+
 .tagline-text-small {
   color: grey; 
   font-size: 1rem;
@@ -783,6 +796,14 @@ animation: pulse 1s ease-out infinite;
   .logo-img {
     width: 150px; 
     margin-left: 0px;
+  }
+  .tagline-text-medium {
+    display: none;
+  }
+  
+  .tagline-text-medium-sm {
+
+    display: block;
   }
   .top-right-items {
     margin-left: -100px;
