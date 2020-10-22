@@ -114,6 +114,15 @@ const VideosContainer = (props) => {
 
      
       <div className="col-12 videos">
+        <div className="tagline">
+          <span className="tagline-text">
+            Welcome to Gravel <i className="fa fa-video-camera video-icon" aria-hidden="true"></i> 
+          </span>
+          <br />
+          <span className="tagline-text-small">
+            Here are some videos we think you might like
+          </span>
+        </div>
         <div
           id="loader-wrapper"
           style={

@@ -12,6 +12,8 @@ body {
 .body-container {
   position: relative;
   margin: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .site-title {
@@ -63,9 +65,15 @@ body {
   margin-left: 300px;
 }
 
+.search-toggle {
+  color: white;
+  margin: 0 15px;
+  font-size: larger;
+}
+
 form {
   position: relative;
-
+  margin: 0 50px;
   transition: all 1s;
   width: 650px;
   height: 32px;
@@ -110,13 +118,18 @@ input {
   z-index: 2;
   padding: 1px 4px;
 }
-
+.search-toggle {
+  display: none;
+}
 form:hover input {
   z-index: 2;
 }
 
 input:focus {
   z-index: 3;
+}
+.form-sm {
+  display: none;
 }
 
 form:hover .fa {
@@ -138,7 +151,7 @@ form:hover .fa {
   list-style: none;
   font-size: medium;
   background-color: white;
-  margin: auto;
+  margin:0 50px;
   width: 648px;
 }
 
@@ -257,8 +270,9 @@ form:hover .fa {
 
 .videos {
   padding-left: 0px;
-  margin-left: 325px;
-  margin-top: 70px;
+  margin-left: 340px;
+  margin-top: 90px;
+  margin-bottom: 4rem;
 }
 
 .watch-later-column {
@@ -427,7 +441,7 @@ form:hover .fa {
   margin-right: 10px;
   margin-top: 15px;
   display: inline-block;
-  width: 300px;
+  width: 95%;
   transition: all 1s;
   animation-name: item-animation;
   animation-duration: 0.7s;
@@ -565,7 +579,7 @@ form:hover .fa {
 }
 
 .categories-navigation {
-  margin-left: 300px;
+  margin-left: 320px;
 }
 
 .nav-item {
@@ -574,7 +588,7 @@ form:hover .fa {
 
 #categories-wrapper .videos {
   margin-top: 0;
-  margin-left: 300px;
+  margin-left: 325px;
 }
 
 .nav-link.active,
@@ -673,26 +687,8 @@ form:hover .fa {
   form {
     width: 200px;
   }
-  .watch-later-items {
-    width: 240px;
-  }
-  .videos {
-    margin-left: 250px;
-  }
-  .section-header {
-    margin-left: 255px;
-  }
-  #categories-wrapper .videos {
-    margin-left: 250px;
-  }
 
-  #categories-wrapper nav {
-    margin-left: 220px;
-  }
-  .creators-list span {
-    font-size: 12px;
-    margin-left: -10px;
-  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -738,6 +734,15 @@ form:hover .fa {
   .top-right-items {
     margin-left: -100px;
   }
+  form {
+    position: absolute;
+    left: 30%;
+    top: 0;
+}
+.search-toggle {
+  display: block;
+}
+  
   #loader {
     position: absolute;
     left: 50%;
@@ -800,20 +805,28 @@ form:hover .fa {
     margin-left: 60px;
   }
 
-  form {
-    width: 35px;
-    margin-left: -150px;
+  form .fa-search {
+    visibility: hidden;
   }
+form {
+  width: 50vw;
+  margin-left: -20px;
+  
+}
+
+.form-large {
+  display: none;
+}
   input {
     height: 32px;
-    width: 35px;
-    background-color: transparent;
+    width: 100%;
     transition: all 0.5s;
     margin-top: -4px;
   }
   .results {
-    width: 40vw;
-    margin-left: -160px;
+    width: 50vw;
+    margin-left: -228px;
+    margin-top: 18px;
   }
   input:focus {
     width: 130px;
@@ -883,21 +896,11 @@ form:hover .fa {
     margin: 1px 8px;
   }
 
-  ::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-  :-moz-placeholder {
-    /* Firefox 18- */
-    color: transparent !important;
-  }
-
-  ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: transparent !important;
-  }
-
-  :-ms-input-placeholder {
-    color: transparent !important;
+  .main-menu-area {
+    height: 50px;
   }
 }
+
+
+/*  */
 
