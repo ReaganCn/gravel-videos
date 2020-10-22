@@ -119,6 +119,13 @@ const VideosContainer = (props) => {
             Welcome to Gravel &nbsp;<img src="/public/imgs/forward-t.png" style={{width: "2rem", marginTop:"-8px", animation: "pulse 1s ease-out infinite"}}></img>
             {/* <i className="fa fa-video-camera video-icon" aria-hidden="true"></i>  */}
           </span>
+    
+          <span className="tagline-text-medium">
+           , programming broken down into bits
+          </span>
+          <span className="tagline-text-medium-sm">
+           Programming broken down into bits
+          </span>
           <br />
           <span className="tagline-text-small">
             Here are some videos we think you might like

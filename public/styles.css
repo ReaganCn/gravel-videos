@@ -58,6 +58,11 @@ body {
   font-size: 1.55rem;
 }
 
+.logo-img {
+  width: 200px; 
+  margin-left: -15px;
+}
+
 .search-container {
   /* margin-right: 30px; */
   display: table;
@@ -302,6 +307,19 @@ animation: pulse 1s ease-out infinite;
   color: white;
   font-size: 1.6rem;
   margin-bottom: 20px;
+}
+
+.tagline-text-medium {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.tagline-text-medium-sm {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: none;
 }
 
 .tagline-text-small {
@@ -775,6 +793,18 @@ animation: pulse 1s ease-out infinite;
     font-size: small;
     margin: 0 !important;
   }
+  .logo-img {
+    width: 150px; 
+    margin-left: 0px;
+  }
+  .tagline-text-medium {
+    display: none;
+  }
+  
+  .tagline-text-medium-sm {
+
+    display: block;
+  }
   .top-right-items {
     margin-left: -100px;
   }
@@ -791,6 +821,9 @@ animation: pulse 1s ease-out infinite;
     position: absolute;
     left: 50%;
     top: 50%;
+  }
+  .tagline {
+  margin-left: 15px;
   }
   .video-card {
     overflow: hidden;
