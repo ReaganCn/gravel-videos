@@ -10,7 +10,7 @@ let buttonStyle = {
 
 const VideosComponent = (props) => {
   return (
-    <div className="col-md-4 ">
+    <div className="col-sm-4 ">
       <div className="card video-card">
         <div className="video-thumbnail">
           <img

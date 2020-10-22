@@ -82,7 +82,7 @@ const SearchContainer = (props) => {
         searchquery={props.state.searchQuery}
         onChange={() => props.handleChange(event)}
       />
-      <ul className="list-group results">{resultsList}</ul>
+      <ul className="list-group results col">{resultsList}</ul>
     </Fragment>
   );
 };

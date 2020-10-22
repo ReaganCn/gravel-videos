@@ -37,6 +37,7 @@ const NotificationContainer = (props) => {
 
   return (
     <Fragment>
+      <i className="fa fa-search search-toggle" ariaHidden="true"></i>
       <NotificationComponent
         count={props.state.count}
         onClickBell={() => notificationClick()}

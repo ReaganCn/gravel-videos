@@ -90,7 +90,7 @@ const categoryVideosMap = props.state.categoryVideos.map( video => {
 
 return <Fragment>
   
-  <div className="col-9 videos">
+  <div className="col-12 videos">
         <div className="card-deck ">{categoryVideosMap}</div>
       </div>
   </Fragment>;

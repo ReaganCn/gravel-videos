@@ -12,7 +12,7 @@ const SearchComponent = (props) => {
         onChange= {props.onChange}
       /> */}
 
-<form action="">
+<form action="" className="">
   <input type="text" placeholder="Search"value={props.searchquery} onChange= {props.onChange}/>
   <i className="fa fa-search" aria-hidden="true"></i>
 </form>

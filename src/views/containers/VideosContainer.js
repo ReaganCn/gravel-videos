@@ -32,8 +32,8 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(watchLaterAction(id));
     },
     notification: (message) => {
-      dispatch(fireNotification(message))
-    }
+      dispatch(fireNotification(message));
+    },
   };
 };
 
@@ -83,13 +83,11 @@ const VideosContainer = (props) => {
   //add to watchLater
 
   const addToWatchLater = (id, title) => {
-      props.addToWatchLater(id)
-      props.notification(`"${title}" added to watch later!`)
-  }
+    props.addToWatchLater(id);
+    props.notification(`"${title}" added to watch later!`);
+  };
 
-  
-
-  const videoList = props.state.videos.slice(0,6).map((video) => {
+  const videoList = props.state.videos.slice(0, 6).map((video) => {
     return (
       <VideosComponent
         key={video._id}
@@ -98,21 +96,44 @@ const VideosContainer = (props) => {
         addToWL={() => addToWatchLater(video._id, video.title)}
         onWatchLater={video.onWatchLater}
         watchVideo={() => videoClicked(video._id)}
-        category ={standardize(video.category)}
+        category={standardize(video.category)}
       />
     );
   });
 
   return (
     <Fragment>
-      <div className="col-3 watch-later-column">
+      <div
+        className="col-3 watch-later-column"
+        id="watch-later-column"
+      >
         <CreatorsConnected />
         <h6 className="for-later-title">FOR LATER</h6>
         <WatchLaterConnected />
       </div>
-      <div className="col-9 videos">
-      <div id="loader-wrapper" style={props.state.isFetching ? { visibility: "visible"} : {visibility: "hidden"} }><div id="loader"></div></div>
-        <div className="row card-deck" style={props.state.isFetching ? { visibility: "collapse"} : {visibility: "visible"} }>{videoList}</div>
+
+     
+      <div className="col-12 videos">
+        <div
+          id="loader-wrapper"
+          style={
+            props.state.isFetching
+              ? { visibility: "visible" }
+              : { visibility: "hidden" }
+          }
+        >
+          <div id="loader"></div>
+        </div>
+        <div
+          className="row card-deck"
+          style={
+            props.state.isFetching
+              ? { visibility: "collapse" }
+              : { visibility: "visible" }
+          }
+        >
+          {videoList}
+        </div>
       </div>
     </Fragment>
   );
