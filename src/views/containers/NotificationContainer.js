@@ -4,12 +4,14 @@ import { connect } from "react-redux";
 import NotificationComponent from "../components/NotificationComponent";
 import { clearNotifications } from "../../redux/notification/actions";
 import NotificationMsgsComponent from "../components/NotificationMsgsComponent";
+import { toggleSearchAction } from "../../redux/search/actions";
 
 //Redux
 
-const mapStateToProps = ({ notification }) => {
+const mapStateToProps = ({ notification, searchHandler }) => {
   return {
     state: notification,
+    search: searchHandler
   };
 };
 
@@ -18,6 +20,9 @@ const mapDispatchToProps = (dispatch) => {
     clickBell: () => {
       dispatch(clearNotifications());
     },
+    toggleSearch: ()=> {
+      dispatch(toggleSearchAction());
+    }
   };
 };
 
@@ -37,7 +42,7 @@ const NotificationContainer = (props) => {
 
   return (
     <Fragment>
-      <i className="fa fa-search search-toggle" ariaHidden="true"></i>
+      <i className="fa fa-search search-toggle" aria-hidden="true" onClick={() => props.toggleSearch()}></i>
       <NotificationComponent
         count={props.state.count}
         onClickBell={() => notificationClick()}

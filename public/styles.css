@@ -127,6 +127,9 @@ form:hover input {
 input:focus {
   z-index: 3;
 }
+.form-sm {
+  display: none;
+}
 
 form:hover .fa {
   color: #3a3a3d;
@@ -804,7 +807,15 @@ form:hover .fa {
   form .fa-search {
     visibility: hidden;
   }
+form {
+  width: 50vw;
+  margin-left: -20px;
+  
+}
 
+.form-large {
+  display: none;
+}
   input {
     height: 32px;
     width: 100%;
@@ -812,8 +823,8 @@ form:hover .fa {
     margin-top: -4px;
   }
   .results {
-    width: 40vw;
-    margin-left: -135px;
+    width: 50vw;
+    margin-left: -235px;
     margin-top: 18px;
   }
   input:focus {

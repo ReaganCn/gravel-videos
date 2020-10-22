@@ -1,9 +1,10 @@
-import { HANDLE_CHANGE, GET_VIDEOS, GET_SEARCH_RESULTS } from "./types";
+import { HANDLE_CHANGE, GET_VIDEOS, GET_SEARCH_RESULTS, TOGGLE_SEARCH } from "./types";
 
 const defaultState =  {
     searchResults: [],
     searchQuery: "",
-    videos: []
+    videos: [],
+    show: false,
 }
 
 const searchReducer = ( state = defaultState, action ) => {
@@ -19,6 +20,10 @@ const searchReducer = ( state = defaultState, action ) => {
         case GET_SEARCH_RESULTS:
             return Object.assign({}, state, {
                 searchResults: action.results
+            })
+        case TOGGLE_SEARCH:
+            return Object.assign({}, state , {
+               show: state.show ? false : true 
             })
         default:
             return state

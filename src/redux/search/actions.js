@@ -1,4 +1,4 @@
-import { HANDLE_CHANGE, GET_VIDEOS, GET_SEARCH_RESULTS } from "./types";
+import { HANDLE_CHANGE, GET_VIDEOS, GET_SEARCH_RESULTS, TOGGLE_SEARCH } from "./types";
 
 
 
@@ -16,6 +16,11 @@ const getSearchPool = (data) => {
     }
 
 }
+const toggleSearchAction = () => {
+    return {
+        type: TOGGLE_SEARCH,
+    }
+}
 
 const searchResultsAction = (results) => {
     return {
@@ -26,4 +31,4 @@ const searchResultsAction = (results) => {
 
 
 
-export {handleChangeAction, getSearchPool, searchResultsAction};
+export {handleChangeAction, getSearchPool, searchResultsAction, toggleSearchAction};
