@@ -116,7 +116,8 @@ const VideosContainer = (props) => {
       <div className="col-10 videos">
         <div className="tagline">
           <span className="tagline-text">
-            Gravel <img src="/public/imgs/forward-t.png" style={{width: "2rem", marginTop:"-8px", animation: "pulse 1s ease-out infinite"}}></img>
+            Gravel 
+            
             {/* <i className="fa fa-video-camera video-icon" aria-hidden="true"></i>  */}
           </span>
     
