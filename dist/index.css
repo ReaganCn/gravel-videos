@@ -332,7 +332,7 @@ animation: pulse 1s ease-out infinite;
 
 .videos {
   padding-left: 0px;
-  margin-left: 340px;
+  margin-left: 23vw;
   margin-top: 90px;
   margin-bottom: 4rem;
 }
@@ -650,7 +650,7 @@ animation: pulse 1s ease-out infinite;
 
 #categories-wrapper .videos {
   margin-top: 0;
-  margin-left: 325px;
+  margin-left: 23vw;
 }
 
 .nav-link.active,
@@ -765,10 +765,10 @@ animation: pulse 1s ease-out infinite;
     font-size: 10px;
   }
   .videos {
-    margin-left: 200px;
+    margin-left: 23vw;
   }
   #categories-wrapper .videos {
-    margin-left: 200px;
+    margin-left: 23vw;
   }
 
   #categories-wrapper nav {
