@@ -636,12 +636,12 @@ animation: pulse 1s ease-out infinite;
 .section-header {
   position: absolute;
   color: #fff;
-  margin-left: 340px;
+  margin-left: 23vw;
   margin-top: -40px;
 }
 
 .categories-navigation {
-  margin-left: 320px;
+  margin-left: 23vw;
 }
 
 .nav-item {
@@ -775,7 +775,7 @@ animation: pulse 1s ease-out infinite;
     margin-left: 200px;
   }
   .section-header {
-    margin-left: 205px;
+    margin-left: 23vw;
   }
 
   .creators-list span {
