@@ -272,10 +272,10 @@ form:hover .fa {
 
 .tagline {
   width: 100%;
- margin-left: 40px;
   text-align: start;
   margin-top: -5px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .video-icon {
@@ -327,17 +327,19 @@ animation: pulse 1s ease-out infinite;
   font-size: 1rem;
 }
 .videos-section {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  width: 100%;
 }
 
 .videos {
   padding-left: 0px;
-  margin-left: 23vw;
+  margin-left: 20%;
   margin-top: 90px;
   margin-bottom: 4rem;
+  width: 80%;
 }
 
-.watch-later-column {
+.watch-later-wrapper {
   padding-right: 0px;
   padding-left: 10px;
   background-color: #1f1f23;
@@ -353,7 +355,10 @@ animation: pulse 1s ease-out infinite;
   margin-top: 70px;
   margin-left: -20px;
   padding-bottom: 20px;
+  width: 20%;
+
 }
+
 
 .recommended-creators {
   color: white;
@@ -634,14 +639,10 @@ animation: pulse 1s ease-out infinite;
 /* Categories section */
 
 .section-header {
-  position: absolute;
-  color: #fff;
-  margin-left: 24vw;
-  margin-top: -40px;
-}
 
-.categories-navigation {
-  margin-left: 23vw;
+  color: #fff;
+  
+  /* margin-top: -40px; */
 }
 
 .nav-item {
@@ -650,7 +651,7 @@ animation: pulse 1s ease-out infinite;
 
 #categories-wrapper .videos {
   margin-top: 0;
-  margin-left: 23vw;
+  /* margin-left: 23vw; */
 }
 
 .nav-link.active,
@@ -769,7 +770,7 @@ animation: pulse 1s ease-out infinite;
   .list-group-item small {
     font-size: 10px;
   }
-  .videos {
+  /* .videos {
     margin-left: 23vw;
   }
   #categories-wrapper .videos {
@@ -781,7 +782,7 @@ animation: pulse 1s ease-out infinite;
   }
   .section-header {
     margin-left: 23vw;
-  }
+  } */
 
   .creators-list span {
     font-size: 10px;
@@ -830,6 +831,11 @@ animation: pulse 1s ease-out infinite;
   .tagline {
   margin-left: 15px;
   }
+
+  .watch-later-wrapper {
+    display: none;
+  }
+
   .video-card {
     overflow: hidden;
     border-radius: 0;

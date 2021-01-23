@@ -12,6 +12,7 @@ import VideosComponent from "../components/VideosComponent";
 import WatchLaterConnected from "./WatchLaterContainer";
 import CreatorsConnected from "./CreatorsContainer";
 import { fireNotification } from "../../redux/notification/actions";
+import CategoriesSection from "./categories-section/CategoriesSection";
 
 //Grabbing from Redux
 const mapStateToProps = ({ videoList }) => {
@@ -103,17 +104,20 @@ const VideosContainer = (props) => {
 
   return (
     <Fragment>
+      <div className="watch-later-wrapper">
       <div
-        className="col-3 watch-later-column"
+        className="watch-later-column"
         id="watch-later-column"
       >
         <CreatorsConnected />
         <h6 className="for-later-title">FOR LATER</h6>
         <WatchLaterConnected />
       </div>
+      </div>
+
 
      
-      <div className="col-10 videos">
+      <div className="videos">
         <div className="tagline">
           <span className="tagline-text">
             Gravel 
@@ -152,7 +156,10 @@ const VideosContainer = (props) => {
         >
           {videoList}
         </div>
+        <CategoriesSection />
       </div>
+
+    
     </Fragment>
   );
 };
